@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>บันทึกรายรับและรายจ่าย</h1>
+    <form>
+        <label for="name">ชื่อรายการ:</label>
+        <input type="text" name="name" id="name" required>
+        <br>
+        <label for="amount">จำนวนเงิน:</label>
+        <input type="number" name="amount" id="amount" required min="0">
+        <br>
+        <label for="date">วันที่:</label>
+        <input type="date" name="date" id="date" required>
+        <br>
+        <label for="time">เวลา:</label>
+        <input type="time" name="time" id="time">
+        <br>
+        <label for="kind">ประเภท:</label>
+        <select name="kind" id="kind" required>
+            <option value="รายรับ">รายรับ</option>
+            <option value="รายจ่าย">รายจ่าย</option>
+        </select>
+        <br>
+        <input type="submit" value="บันทึก">
+        <input type="reset" value="ล้างข้อมูล">
+    </form>
+
+    
+    <br><br>
+    <p id="income">รายรับรวม</p>
+    <p id="expenses">รายจ่ายรวม</p>
+    <p id="balance">ยอดเงินคงเหลือ</p>
+</body>
+</html>
