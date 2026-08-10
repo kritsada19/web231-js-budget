@@ -33,3 +33,4 @@ form.addEventListener("submit", (e) => {
     const kind = kindInput.value;
     addToList(name, amount, date, time, kind);
 })
+
