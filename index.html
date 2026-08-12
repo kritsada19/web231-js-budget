@@ -1,13 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+    <script src="script.js" defer></script>
 </head>
+
 <body>
     <h1>บันทึกรายรับและรายจ่าย</h1>
-    <form>
+    <form id="budgetForm">
         <label for="name">ชื่อรายการ:</label>
         <input type="text" name="name" id="name" required>
         <br>
@@ -20,8 +24,8 @@
         <label for="time">เวลา:</label>
         <input type="time" name="time" id="time">
         <br>
-        <label for="kind">ประเภท:</label>
-        <select name="kind" id="kind" required>
+        <label for="type">ประเภท:</label>
+        <select name="type" id="type" required>
             <option value="รายรับ">รายรับ</option>
             <option value="รายจ่าย">รายจ่าย</option>
         </select>
@@ -30,10 +34,30 @@
         <input type="reset" value="ล้างข้อมูล">
     </form>
 
-    
+
     <br><br>
     <p id="income">รายรับรวม</p>
     <p id="expenses">รายจ่ายรวม</p>
     <p id="balance">ยอดเงินคงเหลือ</p>
+
+    <br><br>
+    <div>
+        <h2>รายการรายรับ</h2>
+        <ul id="incomeList">
+
+        </ul>
+    </div>
+    <br>
+    <div>
+        <h2>รายการรายจ่าย</h2>
+        <ul id="expensesList">
+
+        </ul>
+    </div>
+
+    <div>
+        <button id="clearButton">ล้างข้อมูลทั้งหมด</button>
+    </div>
 </body>
+
 </html>
