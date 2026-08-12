@@ -110,4 +110,6 @@ clearButton.addEventListener("click", () => {
   incomeItems.length = 0;
   expensesItems.length = 0;
   updateSummary();
+  incomeList.innerHTML = "";
+  expensesList.innerHTML = "";
 });
